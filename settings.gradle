@@ -1,0 +1,3 @@
+rootProject.name = "fallapp"
+include ':app'
+include ':blessed'

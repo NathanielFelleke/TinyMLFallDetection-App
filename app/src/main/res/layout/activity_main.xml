@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/phoneNumberInput"
+        android:layout_width="359dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:inputType="phone"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneTextBox" />
+
+    <ToggleButton
+        android:id="@+id/startButton"
+        android:layout_width="229dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="328dp"
+        android:text="ToggleButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberInput" />
+
+    <TextView
+        android:id="@+id/phoneTextBox"
+        android:layout_width="357dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="173dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="monospace"
+        android:text="Emergency Phone Number:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/phoneNumberInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
